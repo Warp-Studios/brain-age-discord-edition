@@ -6,6 +6,7 @@ from discord_slash.client import SlashCommand
 load_dotenv()
 
 bot = Bot(command_prefix="b!")
+slash = SlashCommand(bot)
 
 bot.load_extension("3ds.concentration_training")
 
