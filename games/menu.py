@@ -1,7 +1,9 @@
-from discord.ext import commands
 from discord import Embed
+from discord.ext import commands
 from discord_slash.model import ButtonStyle
-from discord_slash.utils.manage_components import create_button, create_actionrow
+from discord_slash.utils.manage_components import (create_actionrow,
+                                                   create_button)
+
 
 class Menu(commands.Cog):
     """
