@@ -23,3 +23,6 @@ class Menu(commands.Cog):
             create_button(style=ButtonStyle.blurple, label="Devilish Calculations", custom_id="dc"),
         ])]
         await ctx.send(embed=embed, components=buttons)
+
+def setup(bot):
+    bot.add_cog(Menu(bot))
