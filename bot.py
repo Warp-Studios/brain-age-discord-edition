@@ -9,6 +9,7 @@ bot = Bot(command_prefix="b!")
 slash = SlashCommand(bot)
 
 bot.load_extension("games.3ds")
+bot.load_extension("games.menu")
 bot.load_extension("other.owner")
 
 bot.run(environ.get("TOKEN"))
