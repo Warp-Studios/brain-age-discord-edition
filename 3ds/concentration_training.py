@@ -70,13 +70,9 @@ class ConcentrationTraining(commands.Cog):
         if message.author.bot:
             return
         if message.guild.id in list(self.games.keys()):
-            print("t")
             if self.games[message.guild.id]["game"] == "dc":
-                print("v")
                 if message.reference:
-                    print("x")
                     if message.reference.resolved:
-                        print("y")
                         if message.reference.resolved.id == self.games[message.guild.id]["to_edit"].id and message.content == str(self.games[message.guild.id]["last_no1"]+self.games[message.guild.id]["last_no2"]):
                             await message.channel.send("Correct", delete_after=5)
                             await self.games[message.guild.id]["to_edit"].delete()
