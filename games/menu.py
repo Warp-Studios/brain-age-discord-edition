@@ -12,6 +12,7 @@ class Menu(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
     @commands.command()
+    @commands.guild_only()
     async def play(self, ctx):
         """
         Opens the menu
